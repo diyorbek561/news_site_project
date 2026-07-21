@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h3>Rostdan ham chiqmoqchimisiz?</h3>
+
+<form method="POST">
+    {% csrf_token %}
+    <button type="submit">Ha, chiqaman</button>
+</form>
+
+<a href="/">Yo‘q, qaytaman</a>
+
+{% endblock %}

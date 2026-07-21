@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+<form method="GET">
+<input type="search" name="q" placeholder="Search Here">
+<button type="submit">Search</button>
+</form>
+    {% for post in object_list %}
+
+    <h2><a href="{% url 'post_detail' post.slug %}">{{ post.title }}</a></h2>
+
+{% endfor %}
+   {% if is_paginated %}
+
+    {% if page_obj.has_previous %}
+        <a href="?page={{ page_obj.previous_page_number }}&q={{ request.GET.q }}&category={{ request.GET.category }}">
+            Oldingi
+        </a>
+    {% endif %}
+
+    <span>{{ page_obj.number }}</span>
+
+    {% if page_obj.has_next %}
+        <a href="?page={{ page_obj.next_page_number }}&q={{ request.GET.q }}&category={{ request.GET.category }}">
+            Keyingi
+        </a>
+    {% endif %}
+
+{% endif %}
+{% endblock content %}

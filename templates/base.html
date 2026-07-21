@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yangiliklar sayti</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<header>
+    <h3><a href="{% url 'home' %}" class="button">Bosh sahifa</a></h3>
+</header>
+{% if user.is_authenticated %}
+    <h3> Salom {{ user.username }}</h3>
+    <from action={% url 'logout' %} method="POST">{% csrf_token %}
+    <button>Logout</button>
+    </from>
+    <a href="{% url 'create' %}">Create</a>
+{% else %}
+<a href="{% url 'login' %}">Login</a>
+<a href="{% url 'signup' %}">Register</a>
+
+{% endif %}
+
+{% block content %}
+{% endblock content %}
+</body>
+</html>

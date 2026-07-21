@@ -1,0 +1,110 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: #f1f5f9;
+    color: #0f172a;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+/* DETAIL */
+.detail {
+    text-align: center;
+}
+
+/* 🔥 RASM (FIXED) */
+.detail img {
+    display: block;
+    margin: 20px auto;
+    max-width: 450px;   /* muvozanatli o‘lcham */
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* TEXT */
+.detail p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+/* BUTTON GROUP */
+.btn-group {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* BUTTON BASE */
+.btn {
+    display: inline-block;
+    padding: 10px 16px;
+    margin: 5px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    background: #2563eb;
+    font-size: 14px;
+}
+
+/* HOVER */
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* TYPES */
+.btn-warning {
+    background: #3a3630;
+}
+
+.btn-danger {
+    background: #ef4444;
+}
+
+.btn-success {
+    background: #10b981;
+}
+.container {
+    width: 600px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+/* RASM */
+img {
+    width: 300px;   /* 🔥 kichik va o‘rtacha */
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* MATN */
+p {
+    font-size: 16px;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 5px;
+    background: blue;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+/* TURIGA QARAB */
+.delete { background: red; }
+.update { background: orange; }
+.comment { background: green; }

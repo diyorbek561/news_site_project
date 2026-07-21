@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "../custom_project/.idea"
+		},
+		{
+			"path": "../custom_project/config"
+		},
+		{
+			"path": "../custom_project/news"
+		},
+		{
+			"path": "../custom_project/pages"
+		},
+		{
+			"path": "../custom_project/templates"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "pages"
+	}
+}
